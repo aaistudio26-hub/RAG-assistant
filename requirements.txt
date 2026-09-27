@@ -1,0 +1,22 @@
+openai>=1.3.0
+chromadb>=0.4.18
+tiktoken>=0.5.1
+numpy>=2.0.0
+pandas>=2.0.0
+datasets>=2.14.0
+sentence-transformers>=2.2.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+pysbd>=0.3.4
+pillow>=10.4.0
+
+# Совместимые версии для Python 3.11/3.12 и RAGAS.
+# ragas 0.3.x импортирует langchain_community.chat_models.vertexai.
+# Этот модуль есть в langchain-community 0.4.1 и удалён в 0.4.2.
+pydantic>=2.0.0,<3.0.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0
+langchain-community>=0.4.1,<0.4.2
+ragas>=0.3.1,<0.4
+
